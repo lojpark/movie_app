@@ -4,10 +4,10 @@ import './Movie.css';
 function Movie({title, poster, genres, synopsis}) {
     return (
         <div className="Movie">
-            <div className="Movie__Columns">
-                <img src={poster} alt={title} />
+            <div className="Movie__Column">
+                <img className="Movie__Poster" src={poster} alt={title} />
             </div>
-            <div className="Movie__Columns">
+            <div className="Movie__Column">
                 <h1>{title}</h1>
                 <div className="Movie__Genres">
                     {genres.map((genre) => 
